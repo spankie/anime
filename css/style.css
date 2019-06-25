@@ -35,6 +35,8 @@ h1 {
 
 .cover:hover .animate {
   display: block;
+  -webkit-animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .animate {
@@ -77,4 +79,45 @@ h1 {
   background-color: #1ab7ea;
   border: 2px solid #1ab7ea;
   cursor: pointer;
+}
+
+.box {
+	-webkit-animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes box {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+@keyframes box {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #fff;
+  background-image: linear-gradient(to right, #333, #fff, #333);
 }
