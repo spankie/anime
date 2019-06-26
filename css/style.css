@@ -1,4 +1,4 @@
-.container {
+.mycontainer {
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
   box-sizing: border-box;
@@ -115,7 +115,7 @@ h1 {
   }
 }
 
-hr {
+hr.fine {
   border: 0;
   height: 1px;
   background: #fff;
