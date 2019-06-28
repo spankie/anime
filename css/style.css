@@ -121,3 +121,49 @@ hr.fine {
   background: #fff;
   background-image: linear-gradient(to right, #333, #fff, #333);
 }
+
+/* Second part */
+
+.secondcontianer {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  box-sizing: border-box;
+}
+
+.mybox {
+  border: 1px solid black;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.boxcontent {
+  padding: 1rem;
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.height {
+  height: 300px;
+}
+
+.height > * {
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mybutton {
+  color: #000;
+  border-color: #000;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.mybutton:hover {
+  color: #fff;
+  background-color: #000;
+}
