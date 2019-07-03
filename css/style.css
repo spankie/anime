@@ -1,3 +1,52 @@
+a {
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #000;
+  color: white;
+}
+
+.dropdown {
+  display: none;
+  background-color: #000;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+}
+
+.drop:hover ~ #dropdown {
+  display: block !important;
+  -webkit-animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#dropdown:hover {
+  display: block !important;
+  -webkit-animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: box 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* .menu {
+  list-style-type: none;
+} */
+
+.menu a {
+  display: inline;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
 .mycontainer {
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
